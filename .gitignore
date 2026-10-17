@@ -1,0 +1,91 @@
+# ==========================================
+# 1. 通用编译产物与中间文件 (C/C++ Build Artifacts)
+# ==========================================
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.out
+*.dSYM/
+*.d
+
+# 核心转储文件（程序崩溃产物）
+core
+core.*
+vgcore.*
+
+# ==========================================
+# 2. 操作系统与编辑器临时文件 (OS & IDEs)
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# VS Code / CLion / Vim
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# ==========================================
+# 3. 各个 Lab 编译生成的专用可执行文件
+# ==========================================
+
+# Lab 1: Data Lab
+01-datalab/btest
+01-datalab/fshow
+01-datalab/ishow
+
+# Lab 2: Bomb Lab (二进制炸弹本身不用重复提交，只提交 defuse.txt/solution.txt 即可)
+02-bomblab/bomb
+
+# Lab 3: Attack Lab
+03-attacklab/ctarget
+03-attacklab/rtarget
+03-attacklab/hex2raw
+
+# Lab 4: Cache Lab
+04-cachelab/csim
+04-cachelab/csim-ref
+04-cachelab/test-csim
+04-cachelab/test-trans
+04-cachelab/tracegen
+04-cachelab/.csim_results
+04-cachelab/.marker
+
+# Lab 5: Shell Lab
+05-shlab/tsh
+05-shlab/tshref
+05-shlab/myspin
+05-shlab/mysplit
+05-shlab/mystop
+05-shlab/myint
+05-shlab/runtrace
+05-shlab/sdriver
+
+# Lab 6: Malloc Lab
+06-malloclab/mdriver
+06-malloclab/mstats
+
+# Lab 7: Proxy Lab
+07-proxylab/proxy
+07-proxylab/nop-server
+07-proxylab/tiny/tiny
+07-proxylab/test.log
+
+# ==========================================
+# 4. 打包与提交归档文件
+# ==========================================
+# 各 Lab 用 make handin 生成的打包压缩包无需提交
+*.tar
+*.tar.gz
+*.zip
+*-handin.tar
+
+# ==========================================
+# 5. 其他不需要提交的文件
+# ==========================================
+# 书上的示例代码
+code/
